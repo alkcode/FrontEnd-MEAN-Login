@@ -22,9 +22,9 @@ import { AuthService } from '../../services/auth.service';
 export class RegistroComponent {
 
   miFormulario:FormGroup = this.fb.group({
-    name:['Jose', [Validators.required]],
-    email:['alek_1604@hotmail.com', [Validators.required, Validators.email]],
-    password:['miroslav16', [Validators.required, Validators.minLength(6)]]
+    name:['', [Validators.required]],
+    email:['', [Validators.required, Validators.email]],
+    password:['', [Validators.required, Validators.minLength(6)]]
   });
 
   constructor( private fb:FormBuilder,
